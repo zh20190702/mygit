@@ -45,9 +45,23 @@
           <artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.alibaba.nacos</groupId>
+			<artifactId>nacos-spring-context</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		
+		<!-- 1. nacos-配置管理功能依赖 -->
+		<dependency>
     		<groupId>org.springframework.cloud</groupId>
-   	 		<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-   	 		<version>0.9.0.RELEASE</version>
+   			<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+    		<version>0.2.1.RELEASE</version>
+		</dependency>
+
+		<!-- 2. nacos-服务发现功能依赖 -->
+		<dependency>
+    		<groupId>org.springframework.cloud</groupId>
+    		<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+    		<version>0.2.1.RELEASE</version>
 		</dependency>
 	</dependencies>
 
